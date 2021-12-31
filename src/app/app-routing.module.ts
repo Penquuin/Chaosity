@@ -4,8 +4,7 @@ import { HomeComponent } from "./dynamic/home/home.component";
 import { OopsComponent } from "./dynamic/oops/oops.component";
 
 const routes: Routes = [
-  { path: "", redirectTo: "/home", pathMatch: "full" },
-  { path: "home", component: HomeComponent },
+  { path: "", component: HomeComponent },
   { path: "**", component: OopsComponent },
 ];
 
