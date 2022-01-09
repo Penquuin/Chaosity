@@ -7,15 +7,15 @@
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 $custom-typo: mat.define-typography-config(
-  $body-1: mat.define-typography-level(1.1rem, 1.2, 400),
+  $body-1: mat.define-typography-level(1.1rem, 1.1, 400),
 );
 @include mat.core($custom-typo);
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$Chaosity-primary: mat.define-palette(mat.$deep-purple-palette, 600);
-$Chaosity-accent: mat.define-palette(mat.$pink-palette);
+$Chaosity-primary: mat.define-palette(mat.$deep-purple-palette, 800);
+$Chaosity-accent: mat.define-palette(mat.$pink-palette, 600);
 
 // The warn palette is optional (defaults to red).
 $Chaosity-warn: mat.define-palette(mat.$red-palette);
@@ -46,10 +46,4 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-code {
-  margin: 4px;
-  background-color: rgba(0, 0, 0, 0.034);
-  font-family: Consolas, monospace;
 }

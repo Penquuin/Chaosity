@@ -1,5 +1,4 @@
-import { Component, Input, OnInit } from "@angular/core";
-import { DrawerService } from "src/app/drawer.service";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-topbar",
@@ -7,8 +6,7 @@ import { DrawerService } from "src/app/drawer.service";
   styleUrls: ["./topbar.component.scss"],
 })
 export class TopbarComponent implements OnInit {
-  @Input() toggle!: () => void;
-  constructor(public drawer: DrawerService) {}
+  constructor() {}
 
   ngOnInit(): void {}
 }

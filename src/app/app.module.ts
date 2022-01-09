@@ -6,9 +6,19 @@ import { AppComponent } from "./app.component";
 import { StaticModule } from "./static/static.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { DynamicModule } from "./dynamic/dynamic.module";
+import { MarkdownModule } from "ngx-markdown";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, StaticModule, DynamicModule, BrowserAnimationsModule],
+  imports: [
+    HttpClientModule,
+    BrowserModule,
+    AppRoutingModule,
+    StaticModule,
+    DynamicModule,
+    BrowserAnimationsModule,
+    MarkdownModule.forRoot({ loader: HttpClient }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

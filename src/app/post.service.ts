@@ -1,10 +1,9 @@
 import { Injectable } from "@angular/core";
-import { Subject } from "rxjs";
 
 @Injectable({
   providedIn: "root",
 })
-export class DrawerService {
-  public OnDrawerToggle = new Subject();
+export class PostService {
+  public Posts: string[] = ["rogue"];
   constructor() {}
 }

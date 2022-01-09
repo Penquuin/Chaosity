@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from "@angular/core";
 export class BasepageComponent implements OnInit {
   @Input() Title!: string;
   @Input() Subtitle!: string;
+
+  @Input() MarkdownPath?: string;
   constructor() {}
 
   ngOnInit(): void {}

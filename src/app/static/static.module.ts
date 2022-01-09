@@ -4,12 +4,11 @@ import { TopbarComponent } from "./topbar/topbar.component";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { BasepageComponent } from "./basepage/basepage.component";
-import { SidenavComponent } from "./sidenav/sidenav.component";
 import { SharedModule } from "../shared/shared.module";
 
 @NgModule({
-  declarations: [TopbarComponent, BasepageComponent, SidenavComponent],
+  declarations: [TopbarComponent, BasepageComponent],
   imports: [CommonModule, MatToolbarModule, MatSidenavModule, SharedModule],
-  exports: [TopbarComponent, BasepageComponent, SidenavComponent, MatSidenavModule],
+  exports: [TopbarComponent, BasepageComponent, MatSidenavModule],
 })
 export class StaticModule {}
