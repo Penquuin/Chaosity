@@ -7,13 +7,13 @@
   "
 >
   <span *ngIf="mdpath">
-    <markdown [src]="'/assets/posts/' + mdpath + '.md'" emoji></markdown>
+    <markdown [src]="'./assets/posts/' + mdpath + '.md'" emoji></markdown>
   </span>
   <span *ngIf="mdpath === undefined">
     Here are some posts:
     <ul *ngFor="let pname of postService.Posts">
       <li>
-        <a mat-raised-button color="accent" [href]="'/blog/' + pname">{{
+        <a mat-raised-button color="accent" [href]="'./blog/' + pname">{{
           pname.toUpperCase()
         }}</a>
       </li>
