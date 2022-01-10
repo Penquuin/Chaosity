@@ -4,6 +4,6 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class PostService {
-  public Posts: string[] = ["rogue"];
+  public Posts: string[] = ["rogue", "language"];
   constructor() {}
 }
